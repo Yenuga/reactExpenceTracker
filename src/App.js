@@ -35,7 +35,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>This is from main</h1>
       <NewExpence onAddExpence={addNewExpence} />
       <Expenses expenses={expensesarray} />
     </div>
