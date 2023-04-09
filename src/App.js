@@ -27,7 +27,11 @@ function App() {
   ];
 
   const [expensesarray, setExpenses] = useState(expenses);
-  const addNewExpence = (data) => {};
+  const addNewExpence = (data) => {
+    setExpenses((prevState) => {
+      return [data, ...prevState];
+    });
+  };
 
   return (
     <div className="App">
